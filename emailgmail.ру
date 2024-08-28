@@ -1,0 +1,18 @@
+
+def send_email (message, recipient, sender = "university.help@gmail.com"):
+     if "@"not in recipient or not ( recipient.endswith (".com") or recipient.endswith (".ru") or recipient.endswith(".net")):
+         print( send_email("Невозможно отправить письмо с адреса {sender} на адрес{recipient}.")
+         print( send_email("Это сообщение для проверки связи", "vasyok1337@gmail.com" )
+         print(send_email("Нельзя отправить письмо самому себе")
+        print (send_email ("Невозможно отправить письмо с адреса urban.teacher@mail.uk на адрес urban.student@mail.ru" ))
+        print(send_email("НЕСТАНДАРТНЫЙ ОТПРАВИТЕЛЬ! Письмо отправлено с адреса urban.info@gmail.com на адрес urban.fan@mail.ru"))
+         print(send_email("Письмо успешно отправлено с адреса <sender> на адрес <recipient>.")
+        print(send_email("НЕСТАНДАРТНЫЙ ОТПРАВИТЕЛЬ! Письмо отправлено с адреса <sender> на адрес <recipient>.")
+
+           else:
+          print("Отправляем письмо от {sender} на адрес{recipient} с сообщением : {message}")
+print ('Вы видите это сообщение как лучший студент курса!', 'urban.fan@mail.ru', sender='urban.info@gmail.com')
+print ('Пожалуйста, исправьте задание', 'urban.student@mail.ru', sender='urban.teacher@mail.uk')
+print('Напоминаю самому себе о вебинаре', 'urban.teacher@mail.ru', sender='urban.teacher@mail.ru')
+        # Пример как использовать функцию send_email
+         send_email("Hello!","vasyok1337@gmail.com")
